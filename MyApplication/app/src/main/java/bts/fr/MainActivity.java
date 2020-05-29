@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         txtNumber = (EditText) findViewById(R.id.temperature);
-        button_meteo = (Button) findViewById(R.id.button_meteo);
+        button_meteo = (Button) findViewById(R.id.button_meteo1);
         test = (TextView) findViewById(R.id.test);
 
         button_meteo.setOnClickListener(buttonListener);

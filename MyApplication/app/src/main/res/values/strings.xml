@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">HistoMétéo</string>
     <string name="Temps">Température : </string>
+    <string name="ville">Ville : </string>
     <string name="button_meteo">Récupérer Météo</string>
     <string name="test">test</string>
 </resources>
