@@ -4,4 +4,8 @@
     <string name="ville">Ville : </string>
     <string name="button_meteo">Récupérer Météo</string>
     <string name="test">test</string>
+    <string name="sun">Soleil</string>
+    <string name="cloud">Nuage</string>
+    <string name="rain">Pluie</string>
+    <string name="snow">Neige</string>
 </resources>

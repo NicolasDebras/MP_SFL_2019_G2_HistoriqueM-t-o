@@ -9,9 +9,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
 
         <TextView
             android:id="@+id/textView"
@@ -21,10 +21,10 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintHorizontal_bias="0.127"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16" />
+            app:layout_constraintVertical_bias="0.205" />
 
         <Button
             android:id="@+id/button_meteo1"
@@ -40,10 +40,10 @@
 
         <EditText
             android:id="@+id/temperature"
-            android:layout_width="145dp"
-            android:layout_height="39dp"
+            android:layout_width="149dp"
+            android:layout_height="56dp"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="112dp"
+            android:layout_marginTop="128dp"
             android:layout_marginEnd="59dp"
             android:layout_marginBottom="473dp"
             android:autofillHints=""
@@ -51,8 +51,129 @@
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/button_meteo1"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Switch
+            android:id="@+id/sun"
+            android:layout_width="86dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="281dp"
+            android:layout_marginBottom="378dp"
+            android:text="@string/sun"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="95dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="268dp"
+            android:layout_marginBottom="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/sun"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/ic_baseline_wb_sunny_24" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="96dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="300dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_meteo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/temperature"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_baseline_cloud_24" />
+
+        <Switch
+            android:id="@+id/cloud"
+            android:layout_width="92dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="145dp"
+            android:layout_marginBottom="265dp"
+            android:text="@string/cloud"
+            app:layout_constraintBottom_toTopOf="@+id/button_meteo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/sun"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="69dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="418dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/temperature"
+            app:srcCompat="@drawable/ic_baseline_grain_24" />
+
+        <Switch
+            android:id="@+id/rain"
+            android:layout_width="93dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="371dp"
+            android:text="@string/rain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toEndOf="@+id/cloud"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="92dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="275dp"
+            android:layout_marginBottom="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_meteo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sun"
+            app:srcCompat="@drawable/ic_baseline_ac_unit_24" />
+
+        <Switch
+            android:id="@+id/snow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="272dp"
+            android:layout_marginBottom="108dp"
+            android:text="@string/snow"
+            app:layout_constraintBottom_toTopOf="@+id/button_meteo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
