@@ -26,20 +26,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.16" />
 
-        <EditText
-            android:id="@+id/temperature"
-            android:layout_width="145dp"
-            android:layout_height="39dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.744"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.162" />
-
         <Button
             android:id="@+id/button_meteo1"
             android:layout_width="wrap_content"
@@ -52,41 +38,23 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.913" />
 
-        <TextView
-            android:id="@+id/test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/test"
-            app:layout_constraintStart_toStartOf="parent"
+        <EditText
+            android:id="@+id/temperature"
+            android:layout_width="145dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="473dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/button_meteo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <EditText
-        android:id="@+id/temperature"
-        android:layout_width="145dp"
-        android:layout_height="39dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
-
-    <Button
-        android:id="@+id/button_meteo1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_meteo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.913" />
 
     <TextView
         android:id="@+id/test"

@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
-            String température = txtNumber.getText().toString();
-            ville = new Ville (température);
-            test.setText(température);
+            String temperature = txtNumber.getText().toString();
+            ville = new Ville (temperature);
+            test.setText(temperature);
 
             txtNumber.setText("");
 
