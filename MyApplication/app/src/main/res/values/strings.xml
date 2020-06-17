@@ -8,4 +8,5 @@
     <string name="cloud">Nuage</string>
     <string name="rain">Pluie</string>
     <string name="snow">Neige</string>
+    <string name="CP">"Code Postal : "</string>
 </resources>
