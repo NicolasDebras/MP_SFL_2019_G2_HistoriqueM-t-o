@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
             cloud.setChecked(false);
 
             //page1(),
+            //d
 
 
         }
