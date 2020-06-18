@@ -69,13 +69,14 @@ public class MainActivity extends AppCompatActivity {
             rain.setChecked(false);
             cloud.setChecked(false);
 
-            //page1(),
+            page1();
             //d
 
 
         }
     };
-    private void page1 (View view) {
-        startActivity(new Intent(this, page_2.class));
+    private void page1 () {
+        Intent intent = new Intent(this, Activity2.class);
+        startActivity(intent);
     }
 }
